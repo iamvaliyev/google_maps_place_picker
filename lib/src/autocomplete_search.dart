@@ -121,10 +121,10 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
 
   Widget _buildSearchTextField() {
     return TextField(
+      style: TextStyle(color: Color(0xff686767)),
       controller: controller,
       focusNode: focus,
       decoration: InputDecoration(
-        style: TextStyle(color: Color(0xff686767)),
         hintText: widget.hintText,
         border: InputBorder.none,
         isDense: true,
