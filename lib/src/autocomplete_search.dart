@@ -104,7 +104,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
         color: Theme.of(context).brightness == Brightness.dark
             ? Colors.black54
             : Colors.white,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(5),
         elevation: 8.0,
         child: Row(
           children: <Widget>[
@@ -124,6 +124,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
       controller: controller,
       focusNode: focus,
       decoration: InputDecoration(
+        style: TextStyle(color: Color(0xff686767)),
         hintText: widget.hintText,
         border: InputBorder.none,
         isDense: true,
@@ -142,9 +143,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
               child: GestureDetector(
                 child: Icon(
                   Icons.clear,
-                  color: Theme.of(context).brightness == Brightness.dark
-                      ? Colors.white
-                      : Colors.black,
+                  color: Color(0xffDB223A),
                 ),
                 onTap: () {
                   clearText();
