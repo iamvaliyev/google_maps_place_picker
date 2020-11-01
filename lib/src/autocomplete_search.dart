@@ -100,16 +100,13 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
       value: provider,
       child: RoundedFrame(
         height: widget.height,
-        color: Theme.of(context).brightness == Brightness.dark
-            ? Colors.black54
-            : Colors.white,
+        padding: const EdgeInsets.only(right: 10),
+        color: Colors.white,
         borderRadius: BorderRadius.circular(5),
         elevation: 8.0,
         child: Row(
           children: <Widget>[
-            SizedBox(width: 10),
             Icon(Icons.search),
-            SizedBox(width: 10),
             Expanded(child: _buildSearchTextField()),
             _buildTextClearIcon(),
           ],
