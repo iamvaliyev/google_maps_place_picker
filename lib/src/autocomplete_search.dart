@@ -121,7 +121,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
 
   Widget _buildSearchTextField() {
     return TextField(
-      style: TextStyle(color: Color(0xff686767)),
+      style: TextStyle(color: Color(0xff686767), fontSize: 16),
       controller: controller,
       focusNode: focus,
       decoration: InputDecoration(
@@ -240,7 +240,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
 
   Widget _buildSearchingOverlay() {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 6),
       child: Row(
         children: <Widget>[
           SizedBox(
@@ -252,7 +252,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
           Expanded(
             child: Text(
               widget.searchingText ?? "Searching...",
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 16, color: Color(0xff9C9C9C),),
             ),
           )
         ],
