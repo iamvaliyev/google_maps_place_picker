@@ -371,7 +371,7 @@ class GoogleMapPlacePicker extends StatelessWidget {
                     fillColor: Theme.of(context).brightness == Brightness.dark ? Colors.black54 : Colors.white,
                     elevation: 8.0,
                     onPressed: onToggleMapType,
-                    child: Icon(Icons.layers),
+                    child: Icon(Icons.layers, color: Color(0xffDB223A)),
                   ),
                 )
               : Container(),
@@ -385,7 +385,7 @@ class GoogleMapPlacePicker extends StatelessWidget {
                     fillColor: Theme.of(context).brightness == Brightness.dark ? Colors.black54 : Colors.white,
                     elevation: 8.0,
                     onPressed: onMyLocation,
-                    child: Icon(Icons.my_location),
+                    child: Icon(Icons.my_location, color: Color(0xffDB223A)),
                   ),
                 )
               : Container(),
